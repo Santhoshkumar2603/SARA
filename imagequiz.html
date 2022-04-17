@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/imagequiz.css" type="text/css" />
+    <title>SARA - Assessment</title>
+</head>
+
+<body>
+    <h1>Number & Symbols identifying Assessment</h1>
+    <div class="container">
+        <div id="start"><button class="start-btn" onClick= "beginQuiz()">Begin the Assessment!</button>
+        <h3>Test your knowledge of Number & Symbols!<br>
+        Each picture of a bird will be accompanied by four options. <br> Click on one to select it as your answer.</p></div>
+        <div id="quiz" style="display: none">
+            <h2 id="quizQuestion"></h2>
+            <div class = "img-div" id="quizImg"></div>
+            <div id="choices">
+                <button id="choiceA" onclick="check('A')"></button>
+                <button id="choiceB" onclick="check('B')"></button>
+                <button id="choiceC" onclick="check('C')"></button>
+                <button id="choiceD" onclick="check('D')"></button>
+            </div>
+            <div id="choiceResponse" style="display: none"></div>
+        </div>
+        <div id="scoreBlock" style="display: none"></div>
+        <div id="scoreMessage" style="display: none"></div>
+        <div><button id="quizAgain" class="quizRestart" style="display: none" onClick="restartQuiz()">Exit</button></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="js/imagequiz.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-database.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-storage.js"></script>
+</body>
+
+</html>

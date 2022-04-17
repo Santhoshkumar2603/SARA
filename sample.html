@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <link rel="stylesheet" href="css/sample.css">
+    <script>
+        $(document).ready(function () {
+            $(".hamburger").click(function () {
+                $(".wrapper").toggleClass("collapsed");
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+
+
+    <div class="wrapper collapsed">
+
+        <div class="top_navbar">
+            <div class="hamburger">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+            </div>
+            <div class="top_menu">
+                <div class="logo">
+                    SARA
+                </div>
+                <ul>
+                    <li><a href="#">
+                            <i class="fas fa-search"></i>
+                        </a></li>
+                    <li><a href="profile.html">
+                            <i class="fas fa-user"></i>
+                        </a></li>
+                    <li><a href="#">
+                            <i class="fas fa-sign-out-alt" id="logout"></i>
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <ul>
+                <li><a href="#" class=active>
+                        <span class="icon"><i class="fas fa-tachometer-alt"></i></span>
+                        <span class="title">Dashboard</span>
+                    </a></li>
+                    <li><a href="tweets.html">
+                        <span class="icon" ><i class="fas fa-sign-out-alt"></i></span>
+                        <span class="title">Logout</span>
+                    </a></li>
+            </ul>
+        </div>
+        
+        <div class="main_container">
+            <div class="item">
+                <div class="items">
+                    <img class="icons" src="images/apointment.png" alt="selfreport"> <br>
+                    <p>DYSLEXIA</p>
+                    <div class="goicon"> <a class="fa fa-chevron-circle-right fa-3x" id="go1"
+                            href="DYSLEXIA.html"></a></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="items">
+                    <img class="icons" src="images/fruit.png" alt="selfreport"> <br>
+                    <p>DYSCALCULIA</p>
+                    <div class="goicon"> <a class="fa fa-chevron-circle-right fa-3x" id="go3"
+                            href="https://covid.uhcitp.in/selfregister" target="_blank"></a></i>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="items">
+                    <img class="icons" src="images/coronavirus.png" alt="selfreport"> <br>
+                    <p>DYSGRAPHIA</p>
+                    <div class="goicon"> <a class="fa fa-chevron-circle-right fa-3x" id="go4"
+                            href="hometreatment.html"></a></i>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="items">
+                    <img class="icons" src="images/counselling_bg.png" alt="selfreport"> <br>
+                    <p>DYSPRAXIA</p>
+                    <div class="goicon"> <a class="fa fa-chevron-circle-right fa-3x" id="go5"
+                            href="tollfreeno.html"></a></i>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="items">
+                    <img class="icons" src="images/video.webp" alt="selfreport"> <br>
+                    <p>AUTISM, ADHD</p>
+                    <div class="goicon"> <a class="fa fa-chevron-circle-right fa-3x" id="go6"
+                            href="healthstatus.html"></a></i>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <script src="js/sample.js"></script>
+</body>
+
+</html>

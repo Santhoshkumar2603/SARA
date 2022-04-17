@@ -1,0 +1,45 @@
+{
+    "data": [
+        {
+            "name": "Apollo Pharmacy",
+            "location": "044-2664 0288",
+            "type": "https://stores.apollopharmacy.in/"
+        },
+        {
+            "name": "MEDPLUS",
+            "location": "044-4355 4505",
+            "type": "https://www.medplusindia.com/"
+        },
+        {
+            "name": "Muthu Pharmacy",
+            "location": "8925413811",
+            "type": "https://www.muthupharmacy.com/home"
+        },
+        {
+            "name": "Nature Care Homoeopathic Pharmacy & Clinic",
+            "location": "9094245500",
+            "type": "https://nature-care-homoeopathic-pharmacy-clinic.business.site/?m=true"
+        },
+        {
+            "name": "Sri Ramachandra Hospital",
+            "location": "044-2476 8027",
+            "type": "https://www.sriramachandra.edu.in/medical/"
+        },
+        {
+            "name": "MedPlus Valasaravakkam",
+            "location": "044-2486 8224",
+            "type": "https://pharmacy.medplusmart.com/INTNMAS00270/MEDPLUS-VALASARAVAKKAM-SVS-COLONY"
+        },
+        {
+            "name": "MedPlus Vepery High Road",
+            "location": "044-4860 1837",
+            "type": "https://pharmacy.medplusmart.com/INTNMAS00161/MEDPLUS-VEPERY-HIGH-ROAD"
+        },
+        {
+            "name": "Contact Doctor Healthcare",
+            "location": "8754692205",
+            "type": "https://contactdoctor.in/"
+        }
+       
+    ]
+  }

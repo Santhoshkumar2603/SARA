@@ -1,0 +1,34 @@
+{
+    "data": [
+        {
+            "no": "1",
+            "question1": "What is Dyslexia ? ",
+            "answer1": "Dyslexia is a learning disorder that affects your ability to read, spell, write, and speak. Kids who have it are often smart and hardworking, but they have trouble connecting the letters they see to the sounds those letters make. About 5% to 10% of Americans have some symptoms of dyslexia, such as slow reading, trouble spelling, or mixing up words. Adults can have this learning disorder, as well. Some people are diagnosed early in life. Others don't realize they have dyslexia until they get older. Kids with dyslexia often have normal vision and are just as smart as their peers. But they struggle more in school because it takes them longer to read. Trouble processing words can also make it hard to spell, write, and speak clearly."
+        },
+        {
+            "no": "2",
+            "question2": "What is Dyspraxia? ",
+            "answer2": "Developmental co-ordination disorder (DCD), also known as dyspraxia, is a condition affecting physical co-ordination. It causes a child to perform less well than expected in daily activities for their age, and appear to move clumsily. A child with DCD may appear awkward and clumsy as they may bump into objects, drop things and fall over a lot. Children may have difficulty with: Playground activities such as hopping, jumping, running, and catching or kicking a ball. They often avoid joining in because of their lack of co-ordination and may find physical education difficult Walking up and down stairs, writing, drawing and using scissors – their handwriting and drawings may appear scribbled and less developed compared to other children their age Getting dressed, doing up buttons and tying shoelaces Keeping still – they may swing or move their arms and legs a lot."
+        },
+        {
+            "no": "3",
+            "question3": "What is Dysgraphia? ",
+            "answer3": "Dysgraphia is characterised by the person having difficulty converting the sounds of language into written form (phonemes into graphemes), or knowing which alternate spelling to use for each sound. A person with dysgraphia may write their letters in reverse, have trouble recalling how letters are formed, or when to use lower or upper case letters. A person with dysgraphia may also struggle to form written sentences with correct grammar and punctuation, with common problems including ommitting words, words ordered incorrectly, incorrect verb and pronoun usage and word ending errors. People with dysgraphia may speak more easily and fluently than they write."
+        },
+        {
+            "no": "4",
+            "question4": "What is ADHD? ",
+            "answer4": "ADHD often begins in childhood and can persist into adulthood. It may contribute to low self-esteem, troubled relationships and difficulty at school or work. Symptoms include limited attention and hyperactivity.Treatments include medication and talk therapy. Children with ADHD may have trouble paying attention, controlling impulsive behaviors (may act without thinking about what the result will be), or be overly active."
+        },
+        {
+            "no": "5",
+            "question5": "What is Autism? ",
+            "answer5": "Autism spectrum disorder impacts the nervous system and affects the overall cognitive, emotional, social and physical health of the affected individual. The range and severity of symptoms can vary widely. Common symptoms include difficulty with communication, difficulty with social interactions, obsessive interests and repetitive behaviours. Early recognition, as well as behavioural, educational and family therapies may reduce symptoms and support development and learning."
+        },
+        {
+            "no":"6",
+            "question6": "What is Dyscalculia?",
+            "answer6": "Dyscalculia is a term referring to a wide range of difficulties with maths, including weaknesses in understanding the meaning of numbers, and difficulty applying mathematical principles to solve problems. Dyscalculia is rarely identified early. Educational psychologists use a series of tests to determine if a person has Dyscalculia. An evaluation reveals how a person understands and uses numbers and maths concepts to solve advanced-level, as well as everyday, problems. Dyscalculia can affect how the brain and eyes work together. So a child may have trouble judging distances between objects."
+        }
+    ]
+}

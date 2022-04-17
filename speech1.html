@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speaking Assessment</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <link rel="shortcut icon" href="/ico/favicon.ico">
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.1/cerulean/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0Mou2qXGeXK7k/Ue/a1hspEVcEP2zCpoQZw8/MPeUgISww+VmDJcy2ri9tX0a6iy" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/speech.css">
+    <script>
+        $(document).ready(function () {
+            $(".hamburger").click(function () {
+                $(".wrapper").toggleClass("collapsed");
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+
+
+    <div class="wrapper collapsed">
+
+        <div class="top_navbar">
+            <div class="hamburger">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+            </div>
+            <div class="top_menu">
+                <div class="logo">
+                    SARA
+                </div>
+                <ul>
+                    <li><a href="index.html">
+                            <i class="fas fa-user"></i>
+                        </a></li>
+                    <li><a href="signin.html">
+                            <i class="fas fa-sign-out-alt" id="logout"></i>
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <ul>
+                <li><a href="Dyslexia.html" class=active>
+                        <span class="icon"><i class="fas fa-tachometer-alt"></i></span>
+                        <span class="title">Dashboard</span>
+                    </a></li>
+            </ul>
+        </div>
+        <div class="main_container">
+            <div class="list-group">
+                <h3 class="no-browser-support">Sorry, Your Browser Doesn't Support the Web Speech API. Try Opening This
+                    Demo In
+                    Google Chrome.</h3>
+                <div class="app">
+                    <div class="row">
+                        <div class="container-fluid align-center">
+                            <b><h1 style="color: darkblue;">Speak to complete the Assessment</h1></b>
+                            <br><br>
+                            <div>
+                                <h4><b>1. Cat – Sat – Bat</b></h4>
+                            </div>
+                            <div class="input-single">
+                                <textarea id="note-textarea1" class="texta"
+                                    placeholder="Create a new note by typing or using voice recognition."
+                                    rows="3"></textarea>
+                            </div>
+                            <button id="start-record-btn1" class="btn btn-success mr-2 mb-2"
+                                title="Start Recording">Start Recognition</button>
+                            <button id="pause-record-btn1" class="btn btn-warning mr-2 mb-2"
+                                title="Pause Recording">Pause Recognition</button>
+                            <button id="save-note-btn1" class="btn btn-info mr-2 mb-2" title="Save Note">Save
+                                Note</button>
+                            <p id="recording-instructions1" class="recordi">Press the
+                                <strong>Start Recognition</strong> button and allow access.
+                            </p>
+                        </div>
+
+                        <div class="container-fluid align-center">
+                            <div>
+                                <h4><b>2. Well – Sell – Tell</b></h4>
+                            </div>
+                            <div class="input-single">
+                                <textarea id="note-textarea2" class="texta"
+                                    placeholder="Create a new note by typing or using voice recognition."
+                                    rows="3"></textarea>
+                            </div>
+                            <button id="start-record-btn2" class="btn btn-success mr-2 mb-2"
+                                title="Start Recording">Start Recognition</button>
+                            <button id="pause-record-btn2" class="btn btn-warning mr-2 mb-2"
+                                title="Pause Recording">Pause Recognition</button>
+                            <button id="save-note-btn2" class="btn btn-info mr-2 mb-2" title="Save Note">Save
+                                Note</button>
+                            <p id="recording-instructions2" class="recordi">Press the
+                                <strong>Start Recognition</strong> button and allow access.
+                            </p>
+                        </div>
+
+                        <div class="container-fluid align-center">
+                            <div>
+                                <h4><b>3. Happy – Nappy – Sappy</b></h4>
+                            </div>
+                            <div class="input-single">
+                                <textarea id="note-textarea3" class="texta"
+                                    placeholder="Create a new note by typing or using voice recognition."
+                                    rows="3"></textarea>
+                            </div>
+                            <button id="start-record-btn3" class="btn btn-success mr-2 mb-2"
+                                title="Start Recording">Start Recognition</button>
+                            <button id="pause-record-btn3" class="btn btn-warning mr-2 mb-2"
+                                title="Pause Recording">Pause Recognition</button>
+                            <button id="save-note-btn3" class="btn btn-info mr-2 mb-2" title="Save Note">Save
+                                Note</button>
+                            <p id="recording-instructions3" class="recordi">Press the
+                                <strong>Start Recognition</strong> button and allow access.
+                            </p>
+                        </div>
+
+                        <div class="container-fluid align-center">
+                            <div>
+                                <h4><b>4. Ball – Fall – Tall</b></h4>
+                            </div>
+                            <div class="input-single">
+                                <textarea id="note-textarea4" class="texta"
+                                    placeholder="Create a new note by typing or using voice recognition."
+                                    rows="3"></textarea>
+                            </div>
+                            <button id="start-record-btn4" class="btn btn-success mr-2 mb-2"
+                                title="Start Recording">Start Recognition</button>
+                            <button id="pause-record-btn4" class="btn btn-warning mr-2 mb-2"
+                                title="Pause Recording">Pause Recognition</button>
+                            <button id="save-note-btn4" class="btn btn-info mr-2 mb-2" title="Save Note">Save
+                                Note</button>
+                            <p id="recording-instructions4" class="recordi">Press the
+                                <strong>Start Recognition</strong> button and allow access.
+                            </p>
+                        </div>
+
+                        <div class="container-fluid align-center">
+                            <div>
+                                <h4><b>5. Map – Sap – Lap</b></h4>
+                            </div>
+                            <div class="input-single">
+                                <textarea id="note-textarea5" class="texta"
+                                    placeholder="Create a new note by typing or using voice recognition."
+                                    rows="3"></textarea>
+                            </div>
+                            <button id="start-record-btn5" class="btn btn-success mr-2 mb-2"
+                                title="Start Recording">Start Recognition</button>
+                            <button id="pause-record-btn5" class="btn btn-warning mr-2 mb-2"
+                                title="Pause Recording">Pause Recognition</button>
+                            <button id="save-note-btn5" class="btn btn-info mr-2 mb-2" title="Save Note">Save
+                                Note</button>
+                            <p id="recording-instructions5" class="recordi">Press the
+                                <strong>Start Recognition</strong> button and allow access.
+                            </p>
+                        </div>
+
+                    </div>
+                    <!-- /row -->
+                </div>
+                <input type="button" class="btn btn-primary mr-2 mb-2" value="Check" onclick="speech()"
+                    class="btn mt-3 btn-primary btn-lg">
+                <!-- /app -->
+                <!-- <input type="button" name="" value="Check" onclick="check()" id="button"
+                    class="btn mt-3 btn-primary btn-lg">
+                <p id="result" style="margin-top: 40px;"></p> -->
+            </div>
+
+
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-storage.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="js/speech1.js"></script>
+</body>
+
+</html>

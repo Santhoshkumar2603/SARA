@@ -1,0 +1,521 @@
+@import url('bootstrap.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css');
+
+:root {
+  --bs-primary: #28a1af;
+  --bs-secondary: #9fcd60;
+  --bs-dark: #303e5c;
+  --bs-light: #f4fbfb;
+  --bs-font: 'Roboto Slab', serif;
+}
+
+body {
+  color: var(--bs-dark);
+}
+
+h1,
+h2 {
+  font-family: var(--bs-font);
+  font-weight: 600;
+}
+
+main h1 {
+  color: var(--bs-primary);
+}
+
+main h2 {
+  color: var(--bs-secondary);
+}
+
+hr.mc-header-line {
+  border: 36px solid var(--bs-secondary);
+  position: absolute;
+  top: 15px;
+  left: 0;
+  z-index: -1;
+  opacity: 1;
+  width: 100%;
+  transform: rotate(0.7deg);
+  margin: 0;
+}
+
+/* From WebAIM */
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.mc-header .navbar {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.mc-scoreboard-container hr.mc-header-line {
+  top: -8px;
+}
+
+.mc-settings .card-body {
+  padding: 1.75rem 1.25rem 2.25rem;
+  box-shadow: 0px 0px 0.75rem #eee;
+}
+
+.mc-settings h2 {
+  font-size: 1.6rem;
+}
+
+.mc-settings input,
+.mc-settings select,
+.mc-settings label {
+  color: var(--bs-dark);
+}
+
+.mc-settings-or {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+}
+
+.mc-settings .form-check-input:checked {
+  background-color: var(--bs-secondary);
+  border-color: var(--bs-secondary);
+}
+
+.mc-settings .form-check-input:focus {
+  border-color: #ccc;
+  box-shadow: 0 0 0 0.25rem #eee;
+}
+
+.mc-settings select {
+  background-color: var(--bs-light);
+}
+
+.mc-settings .form-check-input {
+  background-color: var(--bs-light);
+}
+.mc-settings label,
+.mc-settings-or {
+  font-family: var(--bs-font);
+}
+
+.mc-slogan {
+  font-family: var(--bs-font);
+}
+
+.mc-settings .btn-primary {
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+}
+
+.mc-settings .btn-primary:hover {
+  background-color: var(--bs-primary);
+}
+
+.btn-primary {
+  background-color: var(--bs-secondary);
+  border: 0;
+  font-family: var(--bs-font);
+}
+
+.mc-header h1,
+.mc-scoreboard h2 {
+  color: #fff;
+}
+
+.mc-header {
+  background: var(--bs-dark);
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .mc-intro {
+    margin-top: -2rem;
+  }
+}
+
+.mc-intro p strong {
+  color: var(--bs-primary);
+  font-family: var(--bs-font);
+}
+
+.mc-intro img {
+  max-width: 400px;
+  display: block;
+  margin: 0 auto;
+}
+
+.mc-logo img {
+  padding-right: 10px;
+  margin-top: -5px;
+}
+
+.mc-logo span {
+  font-size: 1.5rem;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.mc-settings h2 {
+  text-align: center;
+}
+
+.mc-game-modal,
+.hide {
+  display: none !important;
+}
+
+.container-lg {
+  padding: 0 2rem;
+}
+
+.mc-game-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.mc-game-container {
+  background: #fff;
+  padding: 2rem;
+  position: absolute;
+  width: 600px;
+  max-width: 85%;
+  left: 50%;
+  top: 50%;
+  border-radius: 0.5rem;
+  transform: translate(-50%, -50%);
+  border: 4px solid var(--bs-secondary);
+  box-shadow: 0px 0px 2rem rgba(0, 0, 0, 0.5);
+}
+
+.active {
+  display: block !important;
+}
+
+.mc-btn-close {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  color: #aaa;
+  text-decoration: none;
+}
+
+.mc-game-problem {
+  display: flex;
+  justify-content: center;
+}
+
+.mc-game-problem div {
+  padding: 0.5rem 0.75rem;
+  font-size: 3.5rem;
+  font-family: var(--bs-font);
+  color: var(--bs-primary);
+}
+
+div.mc-game-problem-equals {
+  color: var(--bs-secondary);
+}
+
+.mc-game-answer {
+  border: 1px solid var(--bs-secondary);
+  outline: 0;
+  border-radius: 3px;
+  max-width: 125px;
+  font-size: 3rem;
+  margin-left: 1rem;
+  padding: 0.25rem 0.25rem 0.25rem 1rem;
+  background: var(--bs-light);
+  color: var(--bs-dark);
+  font-family: var(--bs-font);
+  text-align: center;
+}
+
+.mc-game-feedback {
+  font-size: 1.25rem;
+  font-style: italic;
+  padding: 1rem 0.5rem;
+  text-align: center;
+  color: var(--bs-dark);
+}
+
+.mc-scoreboard-container {
+  background: var(--bs-primary);
+  position: relative;
+  text-align: center;
+  padding: 2rem 0 3rem;
+}
+
+.mc-scoreboard td {
+  text-align: center;
+  border-bottom-color: rgba(255, 255, 255, 0.3);
+}
+
+.mc-scoreboard tr:nth-child(odd) td {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.mc-scoreboard th {
+  font-family: var(--bs-font);
+  font-weight: 600;
+  text-align: center;
+  border-bottom-color: rgba(255, 255, 255, 0.5);
+}
+
+.mc-no-scores {
+  font-style: italic;
+  font-family: var(--bs-font);
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.5) !important;
+  border: 3px dashed rgba(255, 255, 255, 0.25);
+  border-radius: 1rem;
+  padding: 1.25rem 1.5rem;
+  max-width: 500px;
+  margin: 1.5rem auto 0;
+}
+
+.mc-scoreboard-btn-clear {
+  border-color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.9);
+  font-family: var(--bs-font);
+}
+
+.mc-game-timer-bar {
+  transition: width 1s linear;
+  width: 100%;
+  background-image: linear-gradient(to left, var(--bs-primary), #57bac6);
+}
+
+.progress-bar {
+  background-color: var(--bs-primary);
+}
+
+.progress {
+  height: 2rem;
+}
+
+.mc-game-timer-text {
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+.mc-btn-stop {
+  display: block;
+  margin: 1rem auto 0;
+}
+
+.mc-footer {
+  background: var(--bs-dark);
+  font-family: var(--bs-font);
+  position: relative;
+}
+
+.mc-footer a {
+  color: var(--bs-secondary);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.mc-footer a.mc-link-icon {
+  border-bottom: 0;
+}
+.mc-footer a:hover {
+  color: var(--bs-light);
+  border-bottom-color: rgba(255, 255, 255, 0.5);
+}
+.mc-footer-hr {
+  position: absolute;
+  opacity: 1;
+  border: 1px solid var(--bs-secondary);
+  top: -8px;
+  width: 100%;
+}
+
+.mc-footer .bi {
+  font-size: 1.5rem;
+}
+
+.mc-footer .container {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    font-size: 20px;
+  }
+
+  .mc-header {
+    padding-bottom: 1rem;
+  }
+
+  .mc-header nav {
+    justify-content: center;
+  }
+
+  .mc-logo span {
+    font-size: 2rem;
+    padding-left: 10px;
+  }
+
+  .mc-logo img {
+    width: 75px;
+    margin-top: -15px;
+  }
+
+  .mc-settings-or {
+    font-size: 1.1rem;
+  }
+
+  .mc-focus-formEls .col-6 {
+    width: 100%;
+  }
+
+  .mc-focus-formEls .col-6 br {
+    display: none;
+  }
+
+  .mc-no-scores {
+    font-size: 1rem;
+  }
+
+  .mc-scoreboard table {
+    font-size: 0.9rem;
+    line-height: 1.3;
+    vertical-align: bottom;
+  }
+
+  .col-secAns,
+  .col-length {
+    display: none;
+  }
+
+  .mc-scoreboard-btn-clear {
+    font-size: 0.9rem;
+  }
+
+  .mc-footer {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  :root {
+    font-size: 17px;
+  }
+  .navbar-brand {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .mc-logo img {
+    display: inline-block;
+    margin: 0 auto;
+  }
+  .mc-logo span {
+    padding: 0;
+  }
+
+  .mc-slogan {
+    display: none;
+  }
+
+  .mc-main {
+    padding: 0.5rem;
+    margin: 0;
+  }
+
+  .mc-article {
+    padding: 0 1rem;
+  }
+
+  .mc-article p {
+    font-size: 1rem;
+  }
+
+  .mc-settings h2 {
+    font-size: 1.4rem;
+  }
+
+  .mc-focus-formEls {
+    flex-wrap: wrap;
+  }
+
+  .mc-focus-formEls .col-4 {
+    width: 70%;
+  }
+  .mc-focus-formEls .col-2 {
+    width: 25%;
+    padding: 0;
+  }
+
+  .mc-focus-formEls .col-6 {
+    width: 90%;
+    margin-top: 0.5rem;
+    padding-left: 5rem;
+  }
+
+  .mc-settings-or {
+    text-align: left;
+  }
+
+  .mc-row-start {
+    flex-direction: column;
+  }
+
+  .mc-row-start div {
+    width: 100%;
+  }
+
+  #mc-settings-btn {
+    margin-top: 1rem;
+  }
+
+  .mc-intro {
+    padding: 0 2.5rem;
+    font-size: 0.95rem;
+  }
+
+  .mc-intro img {
+    max-width: 95%;
+  }
+
+  .col-length,
+  .col-focusNum,
+  .col-correct {
+    display: none;
+  }
+
+  .mc-game-problem {
+    flex-wrap: wrap;
+  }
+  .mc-game-problem div {
+    font-size: 2.5rem;
+    padding: 0 0.5rem;
+  }
+  .mc-game-answer {
+    width: 55%;
+    margin: 0.25rem 0 0 0;
+    padding: 0.25rem 0.35rem;
+    font-size: 2rem;
+    text-align: center;
+  }
+  .mc-game-feedback {
+    font-size: 0.9rem;
+  }
+}
+
+@media (prefers-reduced-motion) {
+  a:hover {
+    transition: none;
+  }
+}

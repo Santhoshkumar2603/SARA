@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Sit Straight</title>
+    <link rel="stylesheet" href="css/sit-str.css">
+    <style>
+      h1,h3{
+        color: red; 
+      }
+      #warning-button{
+        background: green;
+      }
+    </style>
+  </head>
+  <body onload="main()">
+    <div id="full-page-loader">
+      <div class="lds-ellipsis">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <div id="warnings">
+      <div id="warning-text">
+        <p>
+          This webapp needs camera to run. It will obviously need camera
+          permission as well.
+        </p>
+        <p>The tracker needs proper even lighting on your face to work.</p>
+        <p>Your webcam should be positioned just above your desktop.</p>
+        <button id="warning-button" onclick="start()">OK I understand!</button>
+      </div>
+    </div>
+    <h1>SIT STRAIGHT</h1>
+    <canvas id="canvas" class="canvas" width="200" height="100"></canvas>
+    <h3>Switch Tab to start Assessment</h3>
+
+    <!-- <a href="sit-str..html" class="button">Switch Back to Assessment Tab</a> -->
+    <button class="button" onclick="stops()">Stop Monitoring</button>
+        <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-database.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-storage.js"></script>
+
+    <script src="/js/sit-str/jeelizFaceTransfer.js"></script>
+    <script src="/js/sit-str/posture.js"></script>
+    <script src="/js/sit-str/audio.js"></script>
+    <script src="/js/sit-str/main.js"></script>
+  </body>
+</html>

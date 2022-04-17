@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="MathChamp Makes Learning Math Facts Fun" />
+  <meta name="twitter:creator" content="@ttesori" />
+  <meta name="twitter:image" content="https://mathfactsgame.com/img/mc-screenshot.png" />
+  <meta name="twitter:description" content="A game to help students learn basic math facts" />
+  <meta name="title" property="og:title" content="MathChamp Makes Learning Math Facts Fun!" />
+  <meta name="image" property="og:image" content="https://mathfactsgame.com/img/mc-screenshot.png" /
+  <meta name="description" property="og:description" content="A game to help students learn basic math facts" /> -->
+
+  <link rel="icon" type="image/png" href="">
+  <link rel="stylesheet" href="css/main.css">
+  <title>TRANING</title>
+</head>
+<header class="mc-header text-white mb-md-2">
+
+  <nav class="navbar container">
+    <h1 class="mc-logo navbar-brand text-center text-md-start">
+      <img src="img/mc-icon.svg" width="50" height="50"
+        alt="Addition, Subtraction, Multiplication and Division Symbols">
+      <span>SARA</span>
+    </h1>
+    <div class="mc-slogan text-center text-md-end text-white-50"> Practice Facts. Become a Champ!
+    </div>
+  </nav>
+
+  <hr class="mc-header-line">
+</header>
+<main class="mc-main container-lg mb-5 pt-4 mt-md-4">
+  <article class="mc-article">
+    <h1 class="text-center text-md-start">Dyscalculia</h1>
+    <p class="fst-italic text-center text-md-start mb-4">Choose your settings below to start Traning!</p>
+  </article>
+  <div class="row gx-5 justify-content-between">
+    <section class="mc-settings col-md-12 col-lg-12 pb-4">
+      <div class="card">
+        <div class="card-body">
+          <h2 class="mb-4">Start Traning </h2>
+          <label class="form-label" for="select-type">I want to practice...</label>
+          <div
+            class="mc-operators-formEls mb-3 row justify-content-center justify-content-md-between align-items-center">
+            <div class="mb-3 col-12 col-md-4">
+              <select id="select-type" class="mc-settings-type form-select">
+                <option value="+">Addition</option>
+                <option value="-">Subtraction</option>
+                <option value="*">Multiplication</option>
+                <option value="/">Division</option>
+              </select>
+            </div>
+            <div class="mc-col col-2 mb-3">
+              <span class="mc-settings-or text-center"><strong>OR</strong></span>
+            </div>
+            <div class="mc-col col-8 col-md-6 form-check form-switch mb-3">
+              <label class="form-check-label" for="check-mixed-operators">Randomize Operators!</label>
+              <input type="checkbox" id="check-mixed-operators" class="mc-settings-mixedOperators form-check-input">
+            </div>
+          </div>
+          <label class="form-label" for="select-number">I want to focus on <span
+              class="mc-settings-type-verb">adding</span> the
+            number...</label>
+          <div class="mc-focus-formEls mb-3 row justify-content-center justify-content-md-between align-items-center">
+            <div class="mc-col col-12 col-md-4 mb-3">
+              <select id="select-number" class="mc-settings-focus form-select">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+            </div>
+            <div class="mc-col col-2 mb-3">
+              <span class="mc-settings-or text-center "><strong>OR</strong></span>
+            </div>
+            <div class="mc-col col-7 col-md-6 form-check form-switch mb-3">
+              <label class="form-check-label" for="check-mixed">Mix Up Numbers!</label>
+              <input type="checkbox" id="check-mixed" class="mc-settings-mixed form-check-input">
+            </div>
+          </div>
+          <div class="mc-row-start row align-items-end">
+            <div class="col-6">
+              <label class="form-label" for="select-length">I want to practice for...</label>
+              <select id="select-length" class="mc-settings-length form-select">
+                <option value="10">10 seconds</option>
+                <option value="30">30 seconds</option>
+                <option value="90">90 seconds</option>
+                <option value="120">120 seconds</option>
+              </select>
+            </div>
+            <div class="col-6 text-center"><button id="mc-settings-btn" class="btn btn-primary">
+                Start Game <i class="bi bi-play-fill"></i>
+              </button></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <div class="col-md-5 col-lg-6 col-xl-5 pt-sm-3 pt-md-0 mc-intro">
+      <p><img src="img/kids-illustration.svg" alt="Colorful illustration of kids holding up numbers" width="400"
+          height="252"></p>
+      <p><strong>The best way to get better at math facts</strong> is to practice — and this game
+        makes it fun! Play a game, do your best, then check your scoreboard to see how
+        you get
+        better over time. Once the game starts getting too easy, practice for a shorter amount of time or with higher
+        numbers — you’ll be a math facts champion in no time!</p>
+    </div> -->
+  </div>
+</main>
+
+<section class="mc-scoreboard-container text-white">
+  <hr class="mc-header-line">
+  <div class="container">
+    <h2 class="text-center pb-2">My Scoreboard</h2>
+    <div class="mc-scoreboard mc-no-scores">
+      Play some games to add scores here!
+    </div>
+    <button class="mc-scoreboard-btn-clear btn btn-outline-light d-block mt-4 mx-auto "><i class="bi bi-stars"></i>
+      Clear
+      Scores</button>
+  </div>
+
+</section>
+
+<!-- <footer class="mc-footer text-center text-white-50">
+  <hr class="mc-footer-hr">
+  <div class="container"><a href="https://github.com/Ttesori" class="mc-link-icon" aria-label="Toni's Github Account"><i
+        class="bi bi-github"></i></a>
+    <br>Written by <a href="https://tonitesori.dev" aria-label="Toni's portfolio website">Toni</a>
+  </div>
+</footer> -->
+
+<section class="mc-game-modal">
+  <h2 class="sr-only">Solve the Problem</h2>
+  <div class="mc-game-container">
+    <a href="#" class="mc-btn-close" aria-label="Close Game">X</a>
+    <div class="mc-game-problem">
+      <div class="mc-game-problem-1">1</div>
+      <div class="mc-game-problem-type">+</div>
+      <div class="mc-game-problem-2">1</div>
+      <div class="mc-game-problem-equals">=</div>
+      <input type="number" class="mc-game-answer" max="200" min="0">
+    </div>
+    <div class="mc-game-feedback">This is some feedback</div>
+    <div class="progress mc-game-timer">
+      <span class="mc-game-timer-bar progress-bar" role="progressbar">
+        <span class="mc-game-timer-text">Ready...set...GO!</span>
+      </span>
+
+    </div>
+    <button class="mc-btn-stop btn btn-sm btn-outline-danger mt-4">Stop Traning</button>
+  </div>
+</section>
+
+<script src="src/bootstrap.min.js"></script>
+<script type="module" src="src/app.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SX9DHLBJ65"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', 'G-SX9DHLBJ65');
+</script>
+</body>
+
+</html>
