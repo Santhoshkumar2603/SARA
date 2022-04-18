@@ -377,6 +377,7 @@ function speech()
             var uid = user.uid;
             var rootRef =firebase.database().ref().child(uid);
             var usersRef= rootRef.child("Dyslexia/5");
+            count=count*12;
           usersRef.set({
                  "5": count,
                });

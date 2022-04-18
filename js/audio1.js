@@ -77,6 +77,7 @@ function alert() {
     if (user) {
       var uid = user.uid;
       var rootRef =firebase.database().ref().child(uid);
+      a=a*13;
       var usersRef= rootRef.child("Dyslexia/4");
     usersRef.set({
            "4":a,

@@ -200,8 +200,10 @@ function restartQuiz() {
                 var uid = user.uid;
               var rootRef =firebase.database().ref().child(uid);
               var usersRef= rootRef.child("Dyscalculia/63");
+              var du=score;
+              du=du*17;
             usersRef.set({
-                   "3": score,
+                   "3": du,
                  });
             } 
           });

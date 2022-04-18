@@ -80,6 +80,7 @@ quit_quiz.onclick = () =>{
             var uid = user.uid;
             var rootRef =firebase.database().ref().child(uid);
             var usersRef= rootRef.child("Dyslexia/1");
+            userScore=userScore*10;
           usersRef.set({
                  "1": userScore,
                });

@@ -27,8 +27,10 @@ document.getElementById("startreset").onclick = () => {
                 var uid = user.uid;
               var rootRef =firebase.database().ref().child(uid);
               var usersRef= rootRef.child("Dyscalculia/62");
+              var du=score;
+              du=du*6;
             usersRef.set({
-                   "2": score,
+                   "2": du,
                  });
               // ...
             } 

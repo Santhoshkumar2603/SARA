@@ -19,8 +19,10 @@ function main() { var e = $("#ft-toggle"), t = test.url + "_ft", a = Boolean(JSO
             var uid = user.uid;
           var rootRef =firebase.database().ref().child(uid);
           var usersRef= rootRef.child("Dyspraxia/23");
+        var san=e;
+        san=san*10;
         usersRef.set({
-               "3": e,
+               "3": san,
              });
           // ...
         } 

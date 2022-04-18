@@ -265,7 +265,7 @@ class Game {
 					var uid = user.uid;
 				  var rootRef =firebase.database().ref().child(uid);
 				  var usersRef= rootRef.child("Dysgraphia/32");
-				  console.log("firabse");
+				  san=parseInt(san);
 				usersRef.set({
 					   "2": san,
 					 });
